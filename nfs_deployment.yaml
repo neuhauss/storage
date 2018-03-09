@@ -65,8 +65,8 @@ spec:
           imagePullPolicy: "IfNotPresent"
           volumeMounts:
             - name: export-volume
-              mountPath: /home
+              mountPath: /mnt 
       volumes:
         - name: export-volume
           hostPath:
-            path: /home
+            path: /mnt
